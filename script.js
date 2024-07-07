@@ -7,7 +7,7 @@ let gender = document.querySelector('.container .result-box .gender');
 let probability = document.querySelector('.container .result-box .probability');
 let resultBox = document.querySelector('.container .result-box');
 
-let predictGender = (name) => {
+let predictGender = (name) => { 
         let url = 'https://api.genderize.io?name=';
         fetch(url + name).then(res => res.json()).then(data => {
                 nameTxt.innerHTML = data.name;
